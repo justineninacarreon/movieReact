@@ -61,7 +61,7 @@ public class MovieController {
     }
 
     @ApiOperation("delete movie by id")
-    @DeleteMapping("/{id}")
+    @DeleteMapping("delete/{id}")
     public ResponseEntity deleteMovie(@PathVariable Long id){
         if (movieService.deleteUser(id))
             return ResponseEntity.status(200).body(ApiResponse.builder().code(200)

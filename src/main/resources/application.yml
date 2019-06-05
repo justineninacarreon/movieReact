@@ -4,7 +4,10 @@ server:
 
 spring:
   profiles:
-    active: dev
+    active: prod
+    output:
+      ansi:
+        enabled: ALWAYS
   jackson:
     serialization:
         fail-on-empty-beans: false
